@@ -1,4 +1,5 @@
-const CACHE_NAME = 'tripitaka-VERSION_PLACEHOLDER';
+const VERSION = 'VERSION_PLACEHOLDER';
+const CACHE_NAME = 'tripitaka-' + (VERSION.includes('PLACEHOLDER') ? Date.now() : VERSION);
 const urlsToCache = ['/', '/index.html', '/manifest.json'];
 
 // Install: cache files + activate immediately
